@@ -50,7 +50,8 @@
         input[type="checkbox"] {
             margin-right: 10px;
         }
-        input[type="submit"] {
+        input[type="submit"],
+        .view-requests-button {
             background-color: #007bff;
             color: white;
             padding: 10px;
@@ -59,8 +60,13 @@
             cursor: pointer;
             width: 100%;
             font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
         }
-        input[type="submit"]:hover {
+        input[type="submit"]:hover,
+        .view-requests-button:hover {
             background-color: #0056b3;
         }
     </style>
@@ -81,6 +87,8 @@
         <label><input type="checkbox" name="accessLevels" value="Admin"> Admin</label><br>
         
         <input type="submit" value="Create Software">
+        
+        <a href="pendingRequests.jsp" class="view-requests-button">View Pending Requests</a>
     </form>
 </body>
 </html>
